@@ -1,0 +1,16 @@
++---------------------------------------+
+| NORFOLK & WESTERN TELEGRAPH POLES SET |
++---------------------------------------+
+
+
+ === Changelog ===
+
+
+v1.9 (2023-10-08)
+->  Added Tall, Metal and Hookup poles
+->  Added Changelog, Readme
+->  Minor corrections in english.lng
+
+
+v1.8 (2023-10-05)
+->  Initial release

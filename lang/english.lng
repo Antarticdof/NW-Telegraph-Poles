@@ -1,0 +1,43 @@
+##grflangid 0x01
+
+# General GRF strings
+STR_GRF_NAME:Norfolk & Western Telegraph Poles Set
+STR_GRF_DESCRIPTION:{}{ORANGE}A set of (most) telegraph poles used on the Norfolk & Western railroad as placeable objects.{}{}Slope-aware, with parameters for the Scenario Editor.{}{}{}{SILVER}Graphics: {YELLOW}Antarticdoof{}{SILVER}Coding: {YELLOW}chujo{}{}{}{LTBLUE}October 8, 2023
+STR_GRF_URL:https://github.com/Antarticdof/NW-Telegraph-Poles
+STR_OPENTTD_VERSION:1.2.0 (r22723)
+
+#####################################################
+
+# Parameters
+STR_PAR01_NAME:Only in Scenario Editor
+STR_PAR01_DESC:{GOLD}Objects can be placed only when creating a scenario.
+STR_PAR02_NAME:Irremovable objects
+STR_PAR02_DESC:{GOLD}Built objects can be removed only by using Magic bulldozer.
+
+# Main category strings
+STR_CAT01:N&W Telegraph Poles
+
+# Objects in categories
+STR_NW_Poles:Poles
+STR_NW_Poles_2:Poles
+STR_NW_Larger_Crossarm:Larger Crossarm
+STR_NW_Transformer:Transformer
+STR_NW_Tall_Poles_2:Tall Poles
+STR_NW_Tall_Poles:Tall Poles
+STR_NW_Side_Crossarm:Side Crossarm
+STR_NW_Double_Poles:Double Poles
+
+STR_NW_Double_Crossarms:Double Crossarms
+STR_NW_Double_Crossarms_2:Double Crossarms 2
+STR_NW_Double_Crossarms_3:Double Crossarms 3
+STR_NW_Power_Bridge:Power Bridge
+STR_NW_End_Poles:End Poles
+
+STR_NW_pole_Singles_1:Singles 1
+STR_NW_pole_Singles_2:Singles 2
+STR_NW_Metal_Poles:Metal Poles
+STR_NW_Metal_Poles_2:Metal Poles
+STR_NW_Telegraph:Telegraph
+STR_NW_Hookup:Hookup
+STR_NW_Hookup_2:Hookup
+STR_NW_No_Crossarms:No Crossarms

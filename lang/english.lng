@@ -2,7 +2,7 @@
 
 # General GRF strings
 STR_GRF_NAME:Norfolk & Western Telegraph Poles Set
-STR_GRF_DESCRIPTION:{}{ORANGE}A set of (most) telegraph poles used on the Norfolk & Western railroad as placeable objects.{}{}Slope-aware, with parameters for the Scenario Editor.{}{}{}{SILVER}Graphics: {YELLOW}Antarticdoof{}{SILVER}Coding: {YELLOW}chujo{}{}{}{LTBLUE}October 8, 2023
+STR_GRF_DESCRIPTION:{}{ORANGE}A set of (most) telegraph poles used on the Norfolk & Western railroad as placeable objects.{}{}Slope-aware, with parameters for the Scenario Editor.{}{}{}{SILVER}Graphics: {YELLOW}Antarticdoof{}{SILVER}Coding: {YELLOW}chujo{}{}{}{LTBLUE}October 20, 2023
 STR_GRF_URL:https://github.com/Antarticdof/NW-Telegraph-Poles
 STR_OPENTTD_VERSION:1.2.0 (r22723)
 
@@ -41,3 +41,13 @@ STR_NW_Telegraph:Telegraph
 STR_NW_Hookup:Hookup
 STR_NW_Hookup_2:Hookup
 STR_NW_No_Crossarms:No Crossarms
+
+# 2.0
+STR_NW_Removed_Crossarm:Removed Crossarm
+STR_NW_Single_Crossarm_One_Side:Single Crossarm One Side
+STR_NW_Slightly_Shorter_Poles:Slightly Shorter Poles
+STR_NW_6_Line_Bridge_and_Double_Transformers:6 Line Bridge + Double Transformers
+STR_NW_3and6_Phase_Transformers:3 and 6 Phase Transformers
+STR_NW_Double_Pole_and_Yard_Transformers:Double Pole and Yard Transformers
+STR_NW_3_Phase_Terminal_End:3 Phase Terminal End
+STR_Relay_Cases:Relay Cases

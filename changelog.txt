@@ -6,6 +6,13 @@
  === Changelog ===
 
 
+v2.0 (2023-10-19)
+->  Added 30 new sprites
+->  Replaced "Taller 2 (3)"" as there was a miscolor with the insulators
+->  Replaced both "No Crossarms" as they were not historically acturate
+->  Replaced "Hookup (3)" as it looked weird
+
+
 v1.9 (2023-10-08)
 ->  Added Tall, Metal and Hookup poles
 ->  Added Changelog, Readme

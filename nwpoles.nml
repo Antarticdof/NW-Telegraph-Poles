@@ -3,7 +3,7 @@ grf {
  name: string(STR_GRF_NAME);
  desc: string(STR_GRF_DESCRIPTION);
  url:  string(STR_GRF_URL);
- version: 2;
+ version: 3;
  min_compatible_version: 1;
  param 0 {
     param_scenario_editor {
@@ -5113,6 +5113,1942 @@ item (FEAT_OBJECTS, NW_Hookup_2) {
         default:                switch_NW_Hookup_2_VAR;
         purchase:               switch_NW_Hookup_2_VAR_menu;
         // additional_text:        switch_NW_Hookup_2_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_Removed_Crossarm
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_Removed_Crossarm_VAR01_menu, "gfx/NW_Removed_Crossarm.png") { template_menu(0,0) }
+spriteset(spriteset_NW_Removed_Crossarm_VAR01, "gfx/NW_Removed_Crossarm.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_Removed_Crossarm_VAR02_menu, "gfx/NW_Removed_Crossarm.png") { template_menu(74,0) }
+spriteset(spriteset_NW_Removed_Crossarm_VAR02, "gfx/NW_Removed_Crossarm.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_Removed_Crossarm_VAR03_menu, "gfx/NW_Removed_Crossarm.png") { template_menu(0,266) }
+spriteset(spriteset_NW_Removed_Crossarm_VAR03, "gfx/NW_Removed_Crossarm.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_Removed_Crossarm_VAR04_menu, "gfx/NW_Removed_Crossarm.png") { template_menu(74,266) }
+spriteset(spriteset_NW_Removed_Crossarm_VAR04, "gfx/NW_Removed_Crossarm.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_Removed_Crossarm_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_Removed_Crossarm_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR01_menu; }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR02_menu; }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR03_menu; }
+}
+spritelayout layout_NW_Removed_Crossarm_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Removed_Crossarm_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_Removed_Crossarm_VAR_view, view) {
+    0: layout_NW_Removed_Crossarm_VAR01;
+    1: layout_NW_Removed_Crossarm_VAR02;
+    2: layout_NW_Removed_Crossarm_VAR03;
+    3: layout_NW_Removed_Crossarm_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_Removed_Crossarm_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_Removed_Crossarm_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_Removed_Crossarm_VAR_menu, view) {
+    0:  layout_NW_Removed_Crossarm_VAR01_menu;
+    1:  layout_NW_Removed_Crossarm_VAR02_menu;
+    2:  layout_NW_Removed_Crossarm_VAR03_menu;
+    3:  layout_NW_Removed_Crossarm_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_Removed_Crossarm_TXT, view) {
+//     0:  string(STR_NW_Removed_Crossarm_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_Removed_Crossarm) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_Removed_Crossarm);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_Removed_Crossarm_VAR;
+        purchase:               switch_NW_Removed_Crossarm_VAR_menu;
+        // additional_text:        switch_NW_Removed_Crossarm_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_Single_Crossarm_One_Side
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR01_menu, "gfx/NW_Single_Crossarm_One_Side.png") { template_menu(0,0) }
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR01, "gfx/NW_Single_Crossarm_One_Side.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR02_menu, "gfx/NW_Single_Crossarm_One_Side.png") { template_menu(74,0) }
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR02, "gfx/NW_Single_Crossarm_One_Side.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR03_menu, "gfx/NW_Single_Crossarm_One_Side.png") { template_menu(0,266) }
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR03, "gfx/NW_Single_Crossarm_One_Side.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR04_menu, "gfx/NW_Single_Crossarm_One_Side.png") { template_menu(74,266) }
+spriteset(spriteset_NW_Single_Crossarm_One_Side_VAR04, "gfx/NW_Single_Crossarm_One_Side.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR01_menu; }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR02_menu; }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR03_menu; }
+}
+spritelayout layout_NW_Single_Crossarm_One_Side_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Single_Crossarm_One_Side_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_Single_Crossarm_One_Side_VAR_view, view) {
+    0: layout_NW_Single_Crossarm_One_Side_VAR01;
+    1: layout_NW_Single_Crossarm_One_Side_VAR02;
+    2: layout_NW_Single_Crossarm_One_Side_VAR03;
+    3: layout_NW_Single_Crossarm_One_Side_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_Single_Crossarm_One_Side_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_Single_Crossarm_One_Side_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_Single_Crossarm_One_Side_VAR_menu, view) {
+    0:  layout_NW_Single_Crossarm_One_Side_VAR01_menu;
+    1:  layout_NW_Single_Crossarm_One_Side_VAR02_menu;
+    2:  layout_NW_Single_Crossarm_One_Side_VAR03_menu;
+    3:  layout_NW_Single_Crossarm_One_Side_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_Single_Crossarm_One_Side_TXT, view) {
+//     0:  string(STR_NW_Single_Crossarm_One_Side_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_Single_Crossarm_One_Side) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_Single_Crossarm_One_Side);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_Single_Crossarm_One_Side_VAR;
+        purchase:               switch_NW_Single_Crossarm_One_Side_VAR_menu;
+        // additional_text:        switch_NW_Single_Crossarm_One_Side_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_Slightly_Shorter_Poles
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR01_menu, "gfx/NW_Slightly_Shorter_Poles.png") { template_menu(0,0) }
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR01, "gfx/NW_Slightly_Shorter_Poles.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR02_menu, "gfx/NW_Slightly_Shorter_Poles.png") { template_menu(74,0) }
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR02, "gfx/NW_Slightly_Shorter_Poles.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR03_menu, "gfx/NW_Slightly_Shorter_Poles.png") { template_menu(0,266) }
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR03, "gfx/NW_Slightly_Shorter_Poles.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR04_menu, "gfx/NW_Slightly_Shorter_Poles.png") { template_menu(74,266) }
+spriteset(spriteset_NW_Slightly_Shorter_Poles_VAR04, "gfx/NW_Slightly_Shorter_Poles.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR01_menu; }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR02_menu; }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR03_menu; }
+}
+spritelayout layout_NW_Slightly_Shorter_Poles_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Slightly_Shorter_Poles_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_Slightly_Shorter_Poles_VAR_view, view) {
+    0: layout_NW_Slightly_Shorter_Poles_VAR01;
+    1: layout_NW_Slightly_Shorter_Poles_VAR02;
+    2: layout_NW_Slightly_Shorter_Poles_VAR03;
+    3: layout_NW_Slightly_Shorter_Poles_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_Slightly_Shorter_Poles_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_Slightly_Shorter_Poles_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_Slightly_Shorter_Poles_VAR_menu, view) {
+    0:  layout_NW_Slightly_Shorter_Poles_VAR01_menu;
+    1:  layout_NW_Slightly_Shorter_Poles_VAR02_menu;
+    2:  layout_NW_Slightly_Shorter_Poles_VAR03_menu;
+    3:  layout_NW_Slightly_Shorter_Poles_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_Slightly_Shorter_Poles_TXT, view) {
+//     0:  string(STR_NW_Slightly_Shorter_Poles_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_Slightly_Shorter_Poles) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_Slightly_Shorter_Poles);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_Slightly_Shorter_Poles_VAR;
+        purchase:               switch_NW_Slightly_Shorter_Poles_VAR_menu;
+        // additional_text:        switch_NW_Slightly_Shorter_Poles_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_6_Line_Bridge_and_Double_Transformers
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR01_menu, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { template_menu(0,0) }
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR01, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR02_menu, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { template_menu(74,0) }
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR02, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR03_menu, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { template_menu(0,266) }
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR03, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR04_menu, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { template_menu(74,266) }
+spriteset(spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR04, "gfx/NW_6_Line_Bridge_and_Double_Transformers.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR01_menu; }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR02_menu; }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR03_menu; }
+}
+spritelayout layout_NW_6_Line_Bridge_and_Double_Transformers_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_6_Line_Bridge_and_Double_Transformers_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_6_Line_Bridge_and_Double_Transformers_VAR_view, view) {
+    0: layout_NW_6_Line_Bridge_and_Double_Transformers_VAR01;
+    1: layout_NW_6_Line_Bridge_and_Double_Transformers_VAR02;
+    2: layout_NW_6_Line_Bridge_and_Double_Transformers_VAR03;
+    3: layout_NW_6_Line_Bridge_and_Double_Transformers_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_6_Line_Bridge_and_Double_Transformers_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_6_Line_Bridge_and_Double_Transformers_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_6_Line_Bridge_and_Double_Transformers_VAR_menu, view) {
+    0:  layout_NW_6_Line_Bridge_and_Double_Transformers_VAR01_menu;
+    1:  layout_NW_6_Line_Bridge_and_Double_Transformers_VAR02_menu;
+    2:  layout_NW_6_Line_Bridge_and_Double_Transformers_VAR03_menu;
+    3:  layout_NW_6_Line_Bridge_and_Double_Transformers_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_6_Line_Bridge_and_Double_Transformers_TXT, view) {
+//     0:  string(STR_NW_6_Line_Bridge_and_Double_Transformers_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_6_Line_Bridge_and_Double_Transformers) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_6_Line_Bridge_and_Double_Transformers);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_6_Line_Bridge_and_Double_Transformers_VAR;
+        purchase:               switch_NW_6_Line_Bridge_and_Double_Transformers_VAR_menu;
+        // additional_text:        switch_NW_6_Line_Bridge_and_Double_Transformers_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_3and6_Phase_Transformers
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR01_menu, "gfx/NW_3and6_Phase_Transformers.png") { template_menu(0,0) }
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR01, "gfx/NW_3and6_Phase_Transformers.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR02_menu, "gfx/NW_3and6_Phase_Transformers.png") { template_menu(74,0) }
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR02, "gfx/NW_3and6_Phase_Transformers.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR03_menu, "gfx/NW_3and6_Phase_Transformers.png") { template_menu(0,266) }
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR03, "gfx/NW_3and6_Phase_Transformers.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR04_menu, "gfx/NW_3and6_Phase_Transformers.png") { template_menu(74,266) }
+spriteset(spriteset_NW_3and6_Phase_Transformers_VAR04, "gfx/NW_3and6_Phase_Transformers.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_3and6_Phase_Transformers_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_3and6_Phase_Transformers_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR01_menu; }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR02_menu; }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR03_menu; }
+}
+spritelayout layout_NW_3and6_Phase_Transformers_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3and6_Phase_Transformers_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_3and6_Phase_Transformers_VAR_view, view) {
+    0: layout_NW_3and6_Phase_Transformers_VAR01;
+    1: layout_NW_3and6_Phase_Transformers_VAR02;
+    2: layout_NW_3and6_Phase_Transformers_VAR03;
+    3: layout_NW_3and6_Phase_Transformers_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_3and6_Phase_Transformers_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_3and6_Phase_Transformers_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_3and6_Phase_Transformers_VAR_menu, view) {
+    0:  layout_NW_3and6_Phase_Transformers_VAR01_menu;
+    1:  layout_NW_3and6_Phase_Transformers_VAR02_menu;
+    2:  layout_NW_3and6_Phase_Transformers_VAR03_menu;
+    3:  layout_NW_3and6_Phase_Transformers_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_3and6_Phase_Transformers_TXT, view) {
+//     0:  string(STR_NW_3and6_Phase_Transformers_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_3and6_Phase_Transformers) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_3and6_Phase_Transformers);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_3and6_Phase_Transformers_VAR;
+        purchase:               switch_NW_3and6_Phase_Transformers_VAR_menu;
+        // additional_text:        switch_NW_3and6_Phase_Transformers_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_Double_Pole_and_Yard_Transformers
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR01_menu, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { template_menu(0,0) }
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR01, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR02_menu, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { template_menu(74,0) }
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR02, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR03_menu, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { template_menu(0,266) }
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR03, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR04_menu, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { template_menu(74,266) }
+spriteset(spriteset_NW_Double_Pole_and_Yard_Transformers_VAR04, "gfx/NW_Double_Pole_and_Yard_Transformers.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR01_menu; }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR02_menu; }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR03_menu; }
+}
+spritelayout layout_NW_Double_Pole_and_Yard_Transformers_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_Double_Pole_and_Yard_Transformers_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_Double_Pole_and_Yard_Transformers_VAR_view, view) {
+    0: layout_NW_Double_Pole_and_Yard_Transformers_VAR01;
+    1: layout_NW_Double_Pole_and_Yard_Transformers_VAR02;
+    2: layout_NW_Double_Pole_and_Yard_Transformers_VAR03;
+    3: layout_NW_Double_Pole_and_Yard_Transformers_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_Double_Pole_and_Yard_Transformers_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_Double_Pole_and_Yard_Transformers_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_Double_Pole_and_Yard_Transformers_VAR_menu, view) {
+    0:  layout_NW_Double_Pole_and_Yard_Transformers_VAR01_menu;
+    1:  layout_NW_Double_Pole_and_Yard_Transformers_VAR02_menu;
+    2:  layout_NW_Double_Pole_and_Yard_Transformers_VAR03_menu;
+    3:  layout_NW_Double_Pole_and_Yard_Transformers_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_Double_Pole_and_Yard_Transformers_TXT, view) {
+//     0:  string(STR_NW_Double_Pole_and_Yard_Transformers_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_Double_Pole_and_Yard_Transformers) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_Double_Pole_and_Yard_Transformers);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_Double_Pole_and_Yard_Transformers_VAR;
+        purchase:               switch_NW_Double_Pole_and_Yard_Transformers_VAR_menu;
+        // additional_text:        switch_NW_Double_Pole_and_Yard_Transformers_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// NW_3_Phase_Terminal_End
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR01_menu, "gfx/NW_3_Phase_Terminal_End.png") { template_menu(0,0) }
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR01, "gfx/NW_3_Phase_Terminal_End.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR02_menu, "gfx/NW_3_Phase_Terminal_End.png") { template_menu(74,0) }
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR02, "gfx/NW_3_Phase_Terminal_End.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR03_menu, "gfx/NW_3_Phase_Terminal_End.png") { template_menu(0,266) }
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR03, "gfx/NW_3_Phase_Terminal_End.png") { 
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_sw_slope      (0,266)
+            template_standard      (0,266)
+            template_standard      (0,266)
+            template_se_slope      (0,266)
+            template_north_slope   (0,266)
+            template_standard      (0,266)
+            template_nw_slope      (0,266)
+            template_ns_slope      (0,266)
+            template_east_slope    (0,266)
+            template_ne_slope      (0,266)
+            template_enw_slope     (0,266)
+            template_west_slope    (0,266)
+            template_steep_n       (0,266)
+            template_steep_s       (0,266)
+            template_steep_w       (0,266)
+            template_steep_e       (0,266)
+            }
+
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR04_menu, "gfx/NW_3_Phase_Terminal_End.png") { template_menu(74,266) }
+spriteset(spriteset_NW_3_Phase_Terminal_End_VAR04, "gfx/NW_3_Phase_Terminal_End.png") { 
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_sw_slope      (74,266)
+            template_standard      (74,266)
+            template_standard      (74,266)
+            template_se_slope      (74,266)
+            template_north_slope   (74,266)
+            template_standard      (74,266)
+            template_nw_slope      (74,266)
+            template_ns_slope      (74,266)
+            template_east_slope    (74,266)
+            template_ne_slope      (74,266)
+            template_enw_slope     (74,266)
+            template_west_slope    (74,266)
+            template_steep_n       (74,266)
+            template_steep_s       (74,266)
+            template_steep_w       (74,266)
+            template_steep_e       (74,266)
+            }
+
+
+spritelayout layout_NW_3_Phase_Terminal_End_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR02(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR03 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR03(LOAD_TEMP(0)); }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR04 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR04(LOAD_TEMP(0)); }
+}
+
+// spritelayouts for the purchase menu
+spritelayout layout_NW_3_Phase_Terminal_End_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR01_menu; }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR02_menu; }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR03_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR03_menu; }
+}
+spritelayout layout_NW_3_Phase_Terminal_End_VAR04_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_NW_3_Phase_Terminal_End_VAR04_menu; }
+}
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_NW_3_Phase_Terminal_End_VAR_view, view) {
+    0: layout_NW_3_Phase_Terminal_End_VAR01;
+    1: layout_NW_3_Phase_Terminal_End_VAR02;
+    2: layout_NW_3_Phase_Terminal_End_VAR03;
+    3: layout_NW_3_Phase_Terminal_End_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_NW_3_Phase_Terminal_End_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_NW_3_Phase_Terminal_End_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_NW_3_Phase_Terminal_End_VAR_menu, view) {
+    0:  layout_NW_3_Phase_Terminal_End_VAR01_menu;
+    1:  layout_NW_3_Phase_Terminal_End_VAR02_menu;
+    2:  layout_NW_3_Phase_Terminal_End_VAR03_menu;
+    3:  layout_NW_3_Phase_Terminal_End_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_NW_3_Phase_Terminal_End_TXT, view) {
+//     0:  string(STR_NW_3_Phase_Terminal_End_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, NW_3_Phase_Terminal_End) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_NW_3_Phase_Terminal_End);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              4;
+    }
+    graphics {
+        default:                switch_NW_3_Phase_Terminal_End_VAR;
+        purchase:               switch_NW_3_Phase_Terminal_End_VAR_menu;
+        // additional_text:        switch_NW_3_Phase_Terminal_End_TXT;
+        tile_check:             return CB_RESULT_LOCATION_ALLOW;
+        autoslope:              return CB_RESULT_AUTOSLOPE;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// Relay_Cases
+/////////////////////////////////////////////////////////////////////
+
+spriteset(spriteset_Relay_Cases_VAR01_menu, "gfx/Relay_Cases.png") { template_menu(0,0) }
+spriteset(spriteset_Relay_Cases_VAR01, "gfx/Relay_Cases.png") { 
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_sw_slope      (0,0)
+            template_standard      (0,0)
+            template_standard      (0,0)
+            template_se_slope      (0,0)
+            template_north_slope   (0,0)
+            template_standard      (0,0)
+            template_nw_slope      (0,0)
+            template_ns_slope      (0,0)
+            template_east_slope    (0,0)
+            template_ne_slope      (0,0)
+            template_enw_slope     (0,0)
+            template_west_slope    (0,0)
+            template_steep_n       (0,0)
+            template_steep_s       (0,0)
+            template_steep_w       (0,0)
+            template_steep_e       (0,0)
+            }
+
+spriteset(spriteset_Relay_Cases_VAR02_menu, "gfx/Relay_Cases.png") { template_menu(74,0) }
+spriteset(spriteset_Relay_Cases_VAR02, "gfx/Relay_Cases.png") { 
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_sw_slope      (74,0)
+            template_standard      (74,0)
+            template_standard      (74,0)
+            template_se_slope      (74,0)
+            template_north_slope   (74,0)
+            template_standard      (74,0)
+            template_nw_slope      (74,0)
+            template_ns_slope      (74,0)
+            template_east_slope    (74,0)
+            template_ne_slope      (74,0)
+            template_enw_slope     (74,0)
+            template_west_slope    (74,0)
+            template_steep_n       (74,0)
+            template_steep_s       (74,0)
+            template_steep_w       (74,0)
+            template_steep_e       (74,0)
+            }
+
+// spriteset(spriteset_Relay_Cases_VAR03_menu, "gfx/Relay_Cases.png") { template_menu(0,266) }
+// spriteset(spriteset_Relay_Cases_VAR03, "gfx/Relay_Cases.png") { 
+//             template_standard      (0,266)
+//             template_standard      (0,266)
+//             template_standard      (0,266)
+//             template_sw_slope      (0,266)
+//             template_standard      (0,266)
+//             template_standard      (0,266)
+//             template_se_slope      (0,266)
+//             template_north_slope   (0,266)
+//             template_standard      (0,266)
+//             template_nw_slope      (0,266)
+//             template_ns_slope      (0,266)
+//             template_east_slope    (0,266)
+//             template_ne_slope      (0,266)
+//             template_enw_slope     (0,266)
+//             template_west_slope    (0,266)
+//             template_steep_n       (0,266)
+//             template_steep_s       (0,266)
+//             template_steep_w       (0,266)
+//             template_steep_e       (0,266)
+//             }
+
+// spriteset(spriteset_Relay_Cases_VAR04_menu, "gfx/Relay_Cases.png") { template_menu(74,266) }
+// spriteset(spriteset_Relay_Cases_VAR04, "gfx/Relay_Cases.png") { 
+//             template_standard      (74,266)
+//             template_standard      (74,266)
+//             template_standard      (74,266)
+//             template_sw_slope      (74,266)
+//             template_standard      (74,266)
+//             template_standard      (74,266)
+//             template_se_slope      (74,266)
+//             template_north_slope   (74,266)
+//             template_standard      (74,266)
+//             template_nw_slope      (74,266)
+//             template_ns_slope      (74,266)
+//             template_east_slope    (74,266)
+//             template_ne_slope      (74,266)
+//             template_enw_slope     (74,266)
+//             template_west_slope    (74,266)
+//             template_steep_n       (74,266)
+//             template_steep_s       (74,266)
+//             template_steep_w       (74,266)
+//             template_steep_e       (74,266)
+//             }
+
+
+spritelayout layout_Relay_Cases_VAR01 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_Relay_Cases_VAR01(LOAD_TEMP(0)); }
+}
+spritelayout layout_Relay_Cases_VAR02 {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building { sprite: spriteset_Relay_Cases_VAR02(LOAD_TEMP(0)); }
+}
+// spritelayout layout_Relay_Cases_VAR03 {
+//     ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+//     building { sprite: spriteset_Relay_Cases_VAR03(LOAD_TEMP(0)); }
+// }
+// spritelayout layout_Relay_Cases_VAR04 {
+//     ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+//     building { sprite: spriteset_Relay_Cases_VAR04(LOAD_TEMP(0)); }
+// }
+
+// spritelayouts for the purchase menu
+spritelayout layout_Relay_Cases_VAR01_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_Relay_Cases_VAR01_menu; }
+}
+spritelayout layout_Relay_Cases_VAR02_menu {
+    ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+    building {
+        sprite: GROUNDSPRITE_NORMAL;
+        xoffset: 0; 
+        yoffset: 0; 
+        zoffset: -5;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+    building { sprite: spriteset_Relay_Cases_VAR02_menu; }
+}
+// spritelayout layout_Relay_Cases_VAR03_menu {
+//     ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+//     building {
+//         sprite: GROUNDSPRITE_NORMAL;
+//         xoffset: 0; 
+//         yoffset: 0; 
+//         zoffset: -5;
+//         xextent: 16;
+//         yextent: 16;
+//         zextent: 16;
+//     }
+//     building { sprite: spriteset_Relay_Cases_VAR03_menu; }
+// }
+// spritelayout layout_Relay_Cases_VAR04_menu {
+//     ground   { sprite: LOAD_TEMP(0) + LOAD_TEMP(1); }
+//     building {
+//         sprite: GROUNDSPRITE_NORMAL;
+//         xoffset: 0; 
+//         yoffset: 0; 
+//         zoffset: -5;
+//         xextent: 16;
+//         yextent: 16;
+//         zextent: 16;
+//     }
+//     building { sprite: spriteset_Relay_Cases_VAR04_menu; }
+// }
+
+
+// decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_Relay_Cases_VAR_view, view) {
+    0: layout_Relay_Cases_VAR01;
+    1: layout_Relay_Cases_VAR02;
+    // 2: layout_Relay_Cases_VAR03;
+    // 3: layout_Relay_Cases_VAR04;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_Relay_Cases_VAR, [
+    STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_Relay_Cases_VAR_view;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_Relay_Cases_VAR_menu, view) {
+    0:  layout_Relay_Cases_VAR01_menu;
+    1:  layout_Relay_Cases_VAR02_menu;
+    // 2:  layout_Relay_Cases_VAR03_menu;
+    // 3:  layout_Relay_Cases_VAR04_menu;
+}
+
+// switch (FEAT_OBJECTS, SELF, switch_Relay_Cases_TXT, view) {
+//     0:  string(STR_Relay_Cases_VAR01);
+//     1:  string(STR_NO_SNOW);
+//     2:  string(STR_NO_SNOW);
+//     3:  string(STR_NO_SNOW);
+// }
+
+
+item (FEAT_OBJECTS, Relay_Cases) {
+    property {
+        class:                  "NWPO";
+        classname:              string(STR_CAT01);
+        name:                   string(STR_Relay_Cases);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      0x00000000;
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           (param_scenario_editor==1 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                ( (param_scenario_editor==1 && param_irremovable==0) ? bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ONLY_SE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) :
+                                    ((param_scenario_editor==0 && param_irremovable==1) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS) : bitmask(OBJ_FLAG_ANYTHING_REMOVE,OBJ_FLAG_ON_WATER,OBJ_FLAG_DRAW_WATER,OBJ_FLAG_NO_FOUNDATIONS)));
+        height:                 4;
+        num_views:              2;
+    }
+    graphics {
+        default:                switch_Relay_Cases_VAR;
+        purchase:               switch_Relay_Cases_VAR_menu;
+        // additional_text:        switch_Relay_Cases_TXT;
         tile_check:             return CB_RESULT_LOCATION_ALLOW;
         autoslope:              return CB_RESULT_AUTOSLOPE;
     }

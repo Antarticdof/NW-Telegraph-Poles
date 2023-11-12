@@ -6,6 +6,12 @@
  === Changelog ===
 
 
+v2.1 (2023-11-12)
+->  Added 18 new sprites
+->  Replaced N&W poles 3 side as there was a miscolor with cross arm
+->  Fixed N&W hookup 1 & 2 for symmetry problems
+
+
 v2.0 (2023-10-20)
 ->  Added 30 new sprites
 ->  Replaced Taller 2 (3) as there was a miscolor with the insulators

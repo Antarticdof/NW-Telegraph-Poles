@@ -2,7 +2,7 @@
 
 # General GRF strings
 STR_GRF_NAME:Norfolk & Western Telegraph Poles Set
-STR_GRF_DESCRIPTION:{}{ORANGE}A set of (most) telegraph poles used on the Norfolk & Western railroad as placeable objects.{}{}Slope-aware, with parameters for the Scenario Editor.{}{}{}{SILVER}Graphics: {YELLOW}Antarticdoof{}{SILVER}Coding: {YELLOW}chujo{}{}{}{LTBLUE}November 12, 2023
+STR_GRF_DESCRIPTION:{}{ORANGE}A set of (most) telegraph poles used on the Norfolk & Western railroad as placeable objects.{}{}Slope-aware, with parameters for the Scenario Editor.{}{}{}{SILVER}Graphics: {YELLOW}Antarticdoof{}{SILVER}Coding: {YELLOW}chujo{}{}{}{LTBLUE}January 4, 2024
 STR_GRF_URL:https://github.com/Antarticdof/NW-Telegraph-Poles
 STR_OPENTTD_VERSION:1.2.0 (r22723)
 
@@ -58,3 +58,6 @@ STR_NW_2_Phase_Branch_Line:2 Phase Branch Line
 STR_NW_2_Phase_Branch_Line_2:2 Phase Branch Line
 STR_NW_2_Phase_Terminal_End:2 Phase Terminal End
 STR_NW_6_Phase_Steel_and_Wooden_Tall_Poles:6 Phase Steel and Wooden Tall Poles
+
+# 2.2
+STR_NW_6_Phase_Lopsided_and_Extended_Poles:6 Phase Lopsided and Extended Poles

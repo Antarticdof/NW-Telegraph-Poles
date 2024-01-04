@@ -6,6 +6,9 @@
  === Changelog ===
 
 
+v2.2 (2024-01-04)
+->  Added 4 new sprites
+
 v2.1 (2023-11-12)
 ->  Added 18 new sprites
 ->  Replaced N&W poles 3 side as there was a miscolor with cross arm
